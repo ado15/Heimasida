@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="is">
+    <head>
+        <meta charset="utf-8">
+        <title>Verkefni 1-</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="content">
+                <div class="logo">
+                    <h1>Andri Dagur Ófeigsson</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Heimsíða</a></li>
+                        <li><a href="about.html">Um mig</a></li>
+                        <li><a href="projects.html">Verkefnin mín</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="content">
+                <h1>Mitt framlag í lokaverkefninu</h1>
+                <h2>Undirbúningur fyrir fræsingu og VCarve</h2>
+                <p>Ég tók við hönnuninni eftir að það var búið að teikna hana í Fusion360. Þá byrjaði ég að fletja hönnunina út í fusion með því að nota move, rotate og align skipanir í fusion. Ástæðan af hverju það þurfti að gera útflatning af hönnuninni var sú að hægt væri að búa til DXF skrár og færa hönnunina yfri í VCarve sem er forrit sem við unnum með til þess að gera hönnunina tilbúna fyrir fræsingu. Hér fyrir neðan má sjá mynd af útflatningnum í fusion. </p>
+                <img src="img/v6/utflatningur.png" alt="" width="400" height="310">
+                <p>Næst var það að búa til DXF skrár fyrir hönnunina. Ég var í miklum erfiðleikum með að búa til eina DXF skrá fyrir alla hlutina þannig ég endaði með að búa til eina skrá fyrir hvern hlut.</p>
+                <p>Nú var það að vinna með VCarve fyrsta sem þurfti að gera var að tengja VCarve skjalið mitt við VCarve sem er í Fablab þar sem fræsingin tók sér stað. Hér má sjá myndband hvernig það var gert <a href="https://www.youtube.com/watch?v=wGDx5PD0nTc">Myndband</a>. Næst var það að stilla stærð plötunar sem við mundum fá við til þess að fræsa. Hér fyrir neðan má sjá mynda af stærð plötunar, þá lengd, breidd og þykkt.</p>
+                <img src="img/v6/efnisstillingar.png" alt="" width="300" height="140">
+                <p>Nú voru öll DXF skjölinn sett inn í VCarve og þar þurfti ég að afrita alla hlutina og stilla öllum pörtunum snyrtilega upp svo þeir mundu passa á stærð plötunar. Hér fyrir neðan má sjá fyrstu uppsetninguna af hönnuninni okkar í VCarve.</p>
+                <img src="img/v6/uppsetningVCarve.png" alt="" width="400" height="310">
+                <p>Næst þurfti að setja “fillet” á öll horn í innskotum, þar sem fræsirinn getur ekki gert skörp horn. Í VCarve er tól fyrir þetta og notast er við T-Bone og Dog-Bone fillet með 3mm radíus. Frekari upplýsingar um þessar stillingar og aðferðir má sjá í myndbandi frá kennara námskeiðsins sem er hér fyrir ofan. Hér fyrir neðan má sjá mynd af hvernig fillet var notað þá í öllum hornum sem voru innan í hönnuninni því fræserinn var í vandræðum með þau horn en ekki þau sem voru þá útlínur af hönnuninni.</p>
+                <img src="img/v6/fillet.JPG" alt="" width="300" height="140">
+
+            
+                <p>Að lokum þarf að stilla feeds and speeds og toolpaths eins og myndbandið að ofan segir einnig til um. Hér að neðan má sjá þær stillingar sem settar eru inn fyrir verkefnið ásamt öllum þeim toolpaths sem settar eru inn, en þær eru sex talsins.</p>
+                <img src="img/v6/fraesistillingar.png" alt="" width="750" height="400">
+                <img src="img/v6/toolpaths.png" alt="" width="750" height="400">
+                <p>Þegar komið er að fræsingu þarf að passa að fara aftur vel yfir allar nóður (e. nodes) í VCarve og sjá hvort eitthvað þurfi að laga, í samráði við kennara eða aðra vana einstaklinga. Einnig þarf að fullvissa sig um að réttur bor (eða haus) sé valinn, að stilla á skurð sem fer alveg í gegn þar sem við á og raða toolpaths í þá röð sem á að skera í.</p>
+                <p>Hér er passað að hafa auka svæði fyrir þá parta þar sem á að fræsa nokkra millimetra ofan í plötuna og þá parta þar sem á að skera alveg í gegn til að mætast. Þetta er til staðar í festinga stæðunum á fótum borðsins. Þá eru fyrrnefndu partarnir látnir ná út fyrir þá seinni, til þess að ekki myndist hak við skilin. </p>
+                <p>Borinn sem á að nota er 6mm og hefur hann verið valinn eins og sjá má á stillinga myndinni að ofan. Kornastærð sagsins er stillt á 0,2 - en mikilvægt er að hafa hana ekki of litla, sem eykur líkur á íkveikju, né of stóra, sem gæti valdið skemmdum á bornum.</p>
+                <p>Toolpaths eru svo stilltar í þá röð að fyrst er fræst þar sem ekki á að fara alveg í gegn, því næst eru það stærstu partarnir af hillunum tveimur, þá hliðar hillanna, fætur borðsins og að lokum festingarnar. Síðasta skrefið er að setja inn flipa meðfram hlutunum sem eru skornir út, til þess að þeir færist ekki úr stað við skurðinn. Þá er hægt að vista skrána og færa í tölvuna sem tengd er við fræsinn.</p>
+                <hr/>
+                <h2>Fræsing hliðarborðs</h2>
+                <p>Í þessum kafla eru helstu atriði sem gerð voru við fræsingu. Gott er að lesa vel yfir leiðbeiningar Shopbot fræsis frá FabLab áður en hafist er handa, en þær má sækja <a href="https://wwwhttps://docs.google.com/document/d/1ohE9iJSj1FuKHK7hgF5UreLFZuCexCMcvLN2hL21Or0/edit#heading=h.dpum1lp3ccy2youtube.com/watch?v=wGDx5PD0nTc">hér</a>.</p>
+                <p>Þegar plötu að stærð amk 1500x1500 cm og 1,8 cm á þykkt hefur verið komið fyrir á fræsinum þarf að sjá til þess að öll undirbúnings- og öryggisatriði séu uppfyllt. </p>
+                <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <h3>Áður en byrjað er að fræsa</h3>
+                                <ul>
+                                    <li>Setja upp öryggisgleraugu</li>
+                                    <li>Setja upp heyrnarhlífar</li>
+                                    <li>Binda upp hár og annað sem getur flækst</li>
+                                    <li>Vera í lokuðum skóm</li>
+                                    <li>Kynna sér hvernig á að stöðva fræsi í neyð</li>
+                                    <li>Kveikja á frásogi</li>
+                                    <li>Festa plötu til að fyrirbyggja skemmdir, slys og bruna</li>
+                                    <li>Hita upp fræsinn</li>
+                                    <li>Staðsetja öryggislykil - fræsir fer ekki af stað án hans</li>
+                                    <li>Ath. að fræsir þarf að vera undir stöðugu eftirliti</li>
+                                    <li>Að lokinni fræsingu þarf að færa fræsitönn í örugga stöðu og slökkva á fræsi</li>
+                                </ul>
+                                    
+                        </div>
+                    </div>
+                    <p>Hér má sjá ryksugu sem tengd er fræsinum.</p>
+                    <img src="img/v6/frasog.jpg" alt="" width="400" height="540">
+                    <p>Þegar listinn hefur verið athugaður og fræsirinn hitnað er hann núllstilltur á x-, y- og z- ás. Það er gert með því að færa fræsitönn á núllpunkt x- og y- ása með örvatökkum á lyklaborði og smella svo á Zero Axes í stýrikerfi. Aðeins er valið að núlltilla x- og y. Því næst er þess til gerð plata staðsett undir fræsitönn og valið er að núllstilla z-ás. Þegar því er lokið er plötunni skilað. Hér má sjá stýrikerfi fræsisins.</p>
+                    <img src="img/v6/styring.jpg" alt="" width="400" height="540">
+                    <p>Þegar öllu þessu er lokið er hægt að setja fræsinn af stað.</p>
+                    <img src="img/v6/fraesing.jpg" alt="" width="400" height="540">
+                    <p>Fræsingin tók u.þ.b. 2,5 klst og tókst vel til. Þegar henni er lokið þarf að ryksuga upp það sag sem eftir situr og losa hlutina úr plötunni, með því að brjóta flipana sem settir voru á þá, með hamri og sporjárni.</p>
+                    <hr/>
+                    <h2>Samsetning hliðarborðs</h2>
+                    <p>Þá tók við að pússa og púsla hliðarborðinu saman.</p>
+                    <p>Við samsetningu komu upp minniháttar hnökrar. Festingarnar sem eru í laginu eins og naglar voru aðeins of stórar til þess að passa í götin til að halda hillunum uppi ásamt því að fingurnir á hillunum voru ansi tæpir líka. Ákveðið var að saga örlítið af fingrunum og prufa að setja hliðarborðið saman án naglafestinganna.</p>
+                    <img src="img/v6/sog.jpg" alt="" width="400" height="540">
+                    <p>Þessar reddingar nægðu til þess að samsetning heppnaðist, en fætur borðsins pössuðu akkúrat í götin á hillunum og ekki þurfti festingarnar til að halda hillunum uppi. Tólin sem notuð voru við pússun og samsetningu voru sandpappír, raspur og hamar.</p>
+                    <img src="img/v6/tol.jpg" alt="" width="400" height="540">
+                    <p>Hér að neðan má svo sjá hliðarborðið þegar það hefur verið sett saman.</p>
+                    <img src="img/v6/hlidarbord.jpg" alt="" width="400" height="540">
+                    <h2>Hönnunarskjöl</h2>
+                    <p>Hönnunarskjölin má finna í lokaskýrslunni okkar: <a href="https://bjorgeva.github.io/website_project/project6">Hönnunarskjöl</a></p>
+                    <h2>Tímaskráning fyrir - Að fræsa eitthvað stórt</h2>
+                    <table style="width:60%">
+                        <tr>
+                        <th>Verkþáttur</th>
+                        <th>Tími (klst.)</th>
+                        </tr>
+                        <tr>
+                        <td>Hugmyndavinna</td>
+                        <td>9</td>
+                        </tr>
+                        <tr>
+                        <td>Verkefnaskipting</td>
+                        <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Hönnun</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>Undirbúningur fyrir fræsingu</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Úrvinnsla í VCarve</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Fræsing</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Samsetining</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+                    <h2>Tímaskráning fyrir - Fræsing móts</h2>
+                    <table style="width:60%">
+                        <tr>
+                        <th>Verkþáttur</th>
+                        <th>Tími (klst.)</th>
+                        </tr>
+                        <tr>
+                        <td>Hugmyndvinna</td>
+                        <td>3</td>
+                        </tr>
+                        <tr>
+                        <td>Verkefnaskipting</td>
+                        <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Skýrsluvinna</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>ado15@hi.is</p>
+        </footer>
+    </body>
+
+</html>
